@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Newspaper</title>
+    <style>
+        body {
+            margin:3% 5%;
+        }
+        p{
+            display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+        }
+        #headline {text-align: center; font-family: "Snell Roundhand"; font-weight: normal; font-size: 32px;}
+        #content {display: flex;}
+        #other-links {display: flex;}
+        #other-links > *:nth-child(1) {
+            flex: 1 1 30%;
+        }
+        #other-links > *:nth-child(2) {
+            flex: 1 1 70%;
+        }
+        #all-links{display:flex; flex-direction: column; justify-content: center; align-content: stretch;
+            margin:0;
+            padding:0;
+            color: white;}
+        .title {font-size: 24px;
+        text-align: center;
+        font-weight: normal;
+        font-style: italic;}
+        .border{
+            border-top: solid 3px #000 ;
+            border-bottom: solid 3px #000 ;
+            border-left: solid 1px #000 ;
+            border-right: solid 1px #000 ;
+            padding: 20px;
+        }
+
+        #link{
+            padding: 40px 0 40px 2%;
+            font-size: 24px;
+        }
+        #link:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <section id="headline">
+        <h1>The News Time</h1>
+    </section>
+    <section id="content">
+        <div id="content-1" class="border">
+            <h2 class="title">Student learns html</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ad in quas alias non! Expedita similique et dolore illum doloremque vel accusantium ut eos tempora sequi, doloribus vitae mollitia praesentium ex ullam? Dolorem labore fugiat neque nostrum porro vero fugit.
+
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam corrupti, eius odio neque incidunt esse fuga veritatis ipsum, eligendi mollitia, porro quasi provident nisi sit! Doloribus, eligendi nemo, ad laudantium cupiditate aspernatur eveniet asperiores modi praesentium voluptas eos sunt odio.
+            </p>
+        </div>
+        <div id="content-2" class="border">
+            <h2 class="title">BREAKING: Puppies Are Adorable</h2>
+            <img src="http://placecorgi.com/500/300" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, dolores? Illo dolores, rerum iste aut porro doloribus fugit itaque voluptas.
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium incidunt ullam ea magni ipsam perferendis ratione pariatur enim repellendus quia?
+            </p>
+        </div>
+        <div id="content-3" class="border">
+            <h2 class="title">CSS Is Apparently a Thing</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ad in quas alias non! Expedita similique et dolore illum doloremque vel accusantium ut eos tempora sequi, doloribus vitae mollitia praesentium ex ullam? Dolorem labore fugiat neque nostrum porro vero fugit.
+
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam corrupti, eius odio neque incidunt esse fuga veritatis ipsum, eligendi mollitia, porro quasi provident nisi sit! Doloribus, eligendi nemo, ad laudantium cupiditate aspernatur eveniet asperiores modi praesentium voluptas eos sunt odio.
+            </p>
+        </div>
+    </section>
+    <section id="other-links">
+        <div id="last-content" class="border">
+            <h2 class="title">Boy Likes Turtles</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, perferendis! Accusamus asperiores quod vitae architecto natus alias fugiat aliquam unde sint expedita repellat rerum, obcaecati hic placeat recusandae quaerat. Dolores excepturi earum minus magni! Animi aperiam eligendi molestias necessitatibus ducimus.
+
+            Voluptate, ut, cupiditate ducimus vitae blanditiis ex impedit debitis est tempora dolores nam sed. Esse nobis ea inventore qui enim quia beatae ab commodi laboriosam quam aliquam aut perspiciatis fuga nam rerum temporibus voluptatum explicabo voluptate, pariatur ullam laudantium eligendi.
+            </p>
+        </div>
+        <div id="all-links" class="border">
+                <div id="link" style="background-color:#D12229;">Politics</div>
+                <div id="link" style="background-color:#F68A1E;">Technology</div>
+                <div id="link" style="background-color:#FDE01A;">Local</div>
+                <div id="link" style="background-color:#007940;">Opinion</div>
+                <div id="link" style="background-color:#24408E;">Sports</div>
+        </div>
+    </section>
+</body>
+</html>
